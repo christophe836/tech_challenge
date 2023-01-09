@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F9F8ED;
+     color: #2F2D38;
+     line-height: 1.6;
+}
+
+li, a {
+    font-family:Montserrat, roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+
+}
+/* partie header*/
+header{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10%;
+    background: #F9F8ED;
+    height: 75px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.logo {
+    padding-right: 120px;
+}
+
+.nav_liens{
+    list-style-type: none;
+}
+
+.nav_liens li{
+    display: inline-block;
+}
+
+.nav_liens a {
+    margin: 0 30px
+}
+
+.nav_liens a:hover{
+    text-decoration: underline;
+}
+/* Fin partie header*/
+
+/* Partie bannière_index*/
+
+.banniere_index{
+    background-image: url(img/img_index.jpg);
+    width: 100%;
+    height: 720px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Partie bannière_index*/
+
+/* Partie banniere*/
+.banniere{
+    position: relative;
+}
+
+.banniere img{
+    height: auto;
+    width: 100%;
+}
+.heros{
+    position: absolute;
+    top: 50%;
+    left:15%;
+    text-align: center;
+    padding: 10px 0;
+    width: 70%;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 52px;
+    background: #2F2D38;
+    border: solid 2px #fbfbf7;
+}
+/* Partie banniere*/
+
+/* Partie main_index*/
+.article{   
+    padding: 0  250px;
+    min-width: 940px;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+
+.img_article{
+    float: left;
+    width: 200px;
+    margin-right: 25px;
+}
+
+.img_article img{
+    width: 100%;
+    height: auto;
+}
+
+.article_titre{
+    padding-bottom: 20px;
+}
+
+.article_titre  a{
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-weight: 700;   
+}
+.article_titre  a:hover{
+    text-decoration: underline;
+}
+
+.article p{
+    font-size: 15px;
+    font-family: roboto, sans-serif;
+    text-align: justify;
+}
+
+#signature{
+    padding:20px 0 30px 250px;
+    opacity: .6;
+}
+/* Fin partie main_index*/
+
+/* Partie footer*/
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding:20px 0 ;
+    background: #2F2D38;
+    color: #fff;
+}
+
+.container div{
+    width: 200px;
+}
+.container h3{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.container div:nth-child(2){
+    width: 250px;
+}
+
+.container a,p{
+    font-size: 15px;
+    font-family: roboto, sans-serif;
+}
+
+.container a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.container_icones{
+    padding:20px 0;
+}
+
+.container_icones a{
+    padding-right: 12px;
+}
+/* Partie footer*/
+
+/* Page_famille royale*/
+.famille_main{
+    background: #fbfbf7;
+}
+.famille_main h1{
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0 0 630px;
+}
+.flex{
+    display: flex; 
+    justify-content: center; 
+ }
+ 
+ .flex div{
+     width: 260px;
+     height: 360px;
+     margin: 30px;  
+ }
+ 
+ .flex div img{
+     width: 100%;
+     height: 350px;
+     border: solid 6px rgb(205, 196, 33);
+     transition: all 1s;
+ }
+ .flex div img:hover{
+     transform: scale(1.2) rotate(3deg) ;
+ }
+
+ .flex_titre{
+    display: flex; 
+    justify-content: center;
+    padding: 0 50px;
+ }
+
+ .flex_titre div{
+    width: 260px;
+    height: 250px;
+    margin:0 20px;
+    text-align: center;
+ }  
+ .flex_titre h2{
+    font-size: 19px;
+    font-family: Montserrat,sans-serif;
+    background: #2F2D38;
+    color: rgb(249, 233, 89);
+    margin-bottom: 15px;
+ }
+/* Page_famille royale*/
+
+/* Page_Les biens Royaux*/
+.biens_titre{
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 25px 0 30px 350px;
+}
+
+.tableau{
+    background: rgb(249, 248, 238); 
+    padding: 0 0 40px 250px; 
+}
+
+table{
+    width: 80%;
+    font-family: roboto, sans-serif;
+}
+
+ tr,td, th{
+    border: 1px solid rgb(88, 76, 76);
+    text-align: center; 
+    height: 50px;
+    background: rgb(251, 250, 250);
+    color: rgb(97, 88, 88); 
+}
+
+th,thead, tfoot{
+    text-align: center;
+    background: #e9d07f;
+}
+tr, td:hover{
+    background: rgb(64, 59, 59);
+    color: rgb(196, 197, 147);
+}
+/* Page_Les biens Royaux*/
+
+/* Page de Contact*/
+.contact_titre{
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 15px 500px;
+}
+
+.box{
+display: flex;
+align-items: center;
+justify-content: center;
+height: auto;
+padding: 20px;
+}
+
+form{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.box div{
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    margin: 10px 0 5px 0;
+}
+
+input{
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1 px solid  rgba(141, 130, 130, 0.4);
+}
+
+input[type=submit]{
+    margin-top: 15px;
+    background: #bb930f;
+    border-radius: 3px;
+    color: #fbfbf7;
+    border: 1px solid #bb930f;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background: #d4b652;
+    color: #2F2D38;
+}
+form p{
+    text-align: center;
+    margin: 5px 0 ;  
+}
+
+form  a {
+    text-decoration: none;
+    color: rgb(60, 125, 215);
+    padding-left: 5px;
+    font-family: roboto, sans-serif;
+}
+
+form  a:hover{
+    text-decoration: underline;
+} 
+/* Page de Contact*/
